@@ -1,7 +1,8 @@
 function Header() {
   return (
-    <header className="bg-gray-900 text-white p-4 text-center">
-      <h1 className="text-3xl font-bold">AI Guardian</h1>
+    <header className="bg-white shadow p-4 flex justify-between items-center">
+      <h1 className="text-xl font-bold">AI Guardian</h1>
+      <button className="text-sm text-gray-600 hover:text-black">Logout</button>
     </header>
   );
 }
