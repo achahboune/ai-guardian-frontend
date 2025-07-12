@@ -9,9 +9,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-  from "./SidebarDummy"
+} from "./SidebarDummy";  // <= Import correct ici, pas de "from" dans l'accolade
 
-}
 const sidebarItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
   { title: "Documents", url: "/documents", icon: FileText },
@@ -30,7 +29,6 @@ export function AppSidebar() {
   const { state } = useSidebar();
   const location = useLocation();
 
-  // Correction ici : supprime ": string"
   const isActive = (path) => location.pathname === path;
 
   return (
