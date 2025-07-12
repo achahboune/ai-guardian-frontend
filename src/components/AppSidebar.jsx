@@ -1,4 +1,3 @@
-
 import { NavLink, useLocation } from "react-router-dom";
 import { Shield, LayoutDashboard, FileText, Users, BarChart3, Settings, User } from "lucide-react";
 import {
@@ -30,7 +29,8 @@ export function AppSidebar() {
   const { state } = useSidebar();
   const location = useLocation();
 
-  const isActive = (path: string) => location.pathname === path;
+  // Correction ici : supprime ": string"
+  const isActive = (path) => location.pathname === path;
 
   return (
     <div className="flex flex-col min-h-screen">
