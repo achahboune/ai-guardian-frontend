@@ -9,8 +9,9 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/sidebar";
+  from "./SidebarDummy"
 
+}
 const sidebarItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
   { title: "Documents", url: "/documents", icon: FileText },
